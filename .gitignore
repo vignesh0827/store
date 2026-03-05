@@ -1,0 +1,29 @@
+# Common
+**/node_modules/
+dist/
+dist-ssr/
+*.local
+.env
+.env.*
+!.env.example
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Backend
+**/__pycache__/
+**/*.py[cod]
+**/venv/
+**/.venv/
+backend/.env
+backend/*.db
+backend/*.sqlite
+
+# Logs
+logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

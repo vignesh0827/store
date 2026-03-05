@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+pydantic-settings
+python-multipart
+cors
+passlib[bcrypt]
+python-jose[cryptography]
+cloudinary
+psycopg2-binary
+alembic
+python-dotenv

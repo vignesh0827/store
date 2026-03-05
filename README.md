@@ -1,0 +1,102 @@
+# NexaGlow (VeggieFlow Pro)
+
+A modern, full-stack Business Management System designed for vegetable and grocery shops. This system handles everything from stock inwarding, daily price management, attendance tracking, to digital billing.
+
+---
+
+## 💻 Desktop Application Usage
+
+### 1. Simple One-Click Start
+You no longer need to type commands!
+- Look for the file named **`Start App.bat`** in the main folder.
+- **Double-click** it.
+- It will automatically start the backend, frontend, and open your browser.
+
+### 2. Install as a Desktop Icon (PWA)
+For a true "Software" experience:
+1. After the app opens in Chrome or Edge, look at the right side of the Address Bar.
+2. Click the **Install** icon (a small monitor/arrow icon).
+3. The app will now have its own icon on your **Desktop** and **Start Menu**.
+4. Opening it from there will remove the browser tabs and address bar, making it look like real desktop software.
+
+---
+
+## 🚀 How to Run the Project (Developer Mode)
+
+This project consists of two parts running simultaneously: the **Frontend** (React UI) and the **Backend** (Python API). You need to start both for the application to work completely.
+
+### 1. Start the Backend Server (Database & API)
+The backend manages the database, security, and logic.
+1. Open a new Terminal (or Command Prompt).
+2. Navigate to the `backend` folder inside your project:
+   ```bash
+   cd "backend"
+   ```
+3. Run the FastAPI server using `uvicorn`:
+   ```bash
+   uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+   ```
+   *The server should now be running at `http://localhost:8000`.*
+
+### 2. Start the Frontend Application (User Interface)
+The frontend provides the visual interface you interact with in the browser.
+1. Open a **second**, separate Terminal.
+2. Make sure you are in the main project folder (`vegetable-app`).
+3. Run the Vite development server:
+   ```bash
+   npm run dev
+   ```
+   *The frontend should now be accessible in your browser at `http://localhost:5173`.*
+
+> **Login Credentials:**
+> - Manager: `Manager` / `Manager@1234`
+> - Employee: `Employee` / `Passwords@1234`
+
+---
+
+## 📁 Folder Structure Analysis
+
+Below is a breakdown of what every key file and folder in the project does:
+
+### 🌟 Root Directory (`vegetable-app/`)
+*   **`.env`**: Secure environment variables for the frontend.
+*   **`package.json`**: Lists all the Node.js packages required by the frontend.
+*   **`vite.config.js`**: Build configuration tools for React.
+
+### 🐍 `backend/` Folder
+This handles all data processing, storage, and security.
+*   **`.env`**: Stores the backend's secret tokens and the specific database file location.
+*   **`requirements.txt`**: The list of all Python libraries needed.
+*   **`veggieflow.db`**: **Your actual database.** This SQLite file contains all sales, stocks, and users.
+
+#### `backend/app/` (Core Logic)
+*   **`main.py`**: The entry point. Defines all the URLs (endpoints) the frontend can communicate with.
+*   **`models.py`**: Defines how the data is shaped inside the database (e.g., what fields a "User" or "Vegetable" has).
+*   **`schemas.py`**: Data guards. These ensure that incoming data is valid (e.g., prices cannot be negative).
+*   **`crud.py`**: "Create, Read, Update, Delete". This file contains the actual functions that talk to the SQLite database.
+*   **`auth.py`**: Handles checking passwords and creating JWT secure login tokens.
+*   **`config.py`**: Loads the `.env` settings securely for the app to use.
+*   **`database.py`**: Opens the connection to the `veggieflow.db` file.
+
+### ⚛️ `src/` Folder (Frontend)
+This contains all the React components and visual logic.
+*   **`App.jsx`**: The main router. It decides which page to show based on the URL.
+*   **`main.jsx`**: The hook that attaches the React app to your browser's HTML.
+*   **`index.css`**: Global design styles and Tailwind definitions.
+*   **`services/api.js`**: The central communication hub. All requests from the frontend to the backend pass through here, where the security tokens are automatically attached.
+
+#### `src/pages/` (Full Screens)
+*   **`Login.jsx`**: The starting screen securely connects to the backend to verify the Manager/Employee.
+*   **`Dashboard.jsx`**: Gives an overview of total sales, low stock alerts, and inward metrics.
+*   **`Inward.jsx`**: For receiving new deliveries of supplies, tracking payments and serial numbers.
+*   **`Outward.jsx`**: For making a sale to a customer and printing a receipt.
+*   **`Prices.jsx`**: For adjusting daily selling prices and analyzing profit margins.
+*   **`StockView.jsx`**: For viewing current stock levels and generating barcode images.
+*   **`Suppliers.jsx`**: For managing vendor profiles and contact data.
+*   **`Attendance.jsx`**: For tracking when team members arrive and leave.
+
+#### `src/components/` (Reusable Pieces)
+*   **`Layout.jsx` & `Sidebar.jsx` & `Header.jsx`**: The frame of the application (navigation menu and top bar) that remains visible as you jump between pages.
+
+---
+*Generated by your AI Assistant.*

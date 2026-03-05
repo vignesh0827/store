@@ -1,0 +1,95 @@
+export const categories = [
+    { id: 'Greens', names: { en: 'Greens', ta: 'கீரை வகைகள்' } },
+    { id: 'Root Vegetables', names: { en: 'Root Vegetables', ta: 'கிழங்கு வகைகள்' } },
+    { id: 'Bulb Vegetables', names: { en: 'Bulb Vegetables', ta: 'வெங்காய வகைகள்' } },
+    { id: 'Common Vegetables', names: { en: 'Common Vegetables', ta: 'காய்கறிகள்' } },
+    { id: 'Gourds', names: { en: 'Gourds', ta: 'காய் வகைகள்' } },
+    { id: 'Others', names: { en: 'Others', ta: 'இதர காய்கறிகள்' } },
+    { id: 'Fruits', names: { en: 'Fruits', ta: 'பழங்கள்' } },
+];
+
+export const vegetables = [
+    // 🥬 Leafy Vegetables (Greens)
+    { id: 'v1', category: 'Greens', names: { en: 'Spinach', ta: 'Pasalai Keerai (பசலை கீரை)' }, image: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v2', category: 'Greens', names: { en: 'Amaranthus', ta: 'Arai Keerai (அரை கீரை)' }, image: 'https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v3', category: 'Greens', names: { en: 'Drumstick Leaves', ta: 'Murungai Keerai (முருங்கை கீரை)' }, image: 'https://images.unsplash.com/photo-1518013391915-e44330fd8d6e?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v4', category: 'Greens', names: { en: 'Fenugreek Leaves', ta: 'Vendhaya Keerai (வெந்தய கீரை)' }, image: 'https://images.unsplash.com/photo-1628543102715-99d07f3e8b0d?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v5', category: 'Greens', names: { en: 'Coriander Leaves', ta: 'Kothamalli (கொத்தமல்லி)' }, image: 'https://images.unsplash.com/photo-1588879460618-9249e7d947d1?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v6', category: 'Greens', names: { en: 'Mint Leaves', ta: 'Pudina (புதினா)' }, image: 'https://images.unsplash.com/photo-1541334547946-888981440f82?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v7', category: 'Greens', names: { en: 'Curry Leaves', ta: 'Karuveppilai (கருவேப்பிலை)' }, image: 'https://images.unsplash.com/photo-1515471209610-dae1c92d8777?q=80&w=400&h=400&auto=format&fit=crop' },
+
+    // 🥕 Root Vegetables
+    { id: 'v8', category: 'Root Vegetables', names: { en: 'Carrot', ta: 'Carrot (கேரட்)' }, image: 'https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v9', category: 'Root Vegetables', names: { en: 'Beetroot', ta: 'Beetroot (பீட்ரூட்)' }, image: 'https://images.unsplash.com/photo-1528192813033-6cf06093d50f?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v10', category: 'Root Vegetables', names: { en: 'Radish', ta: 'Mullangi (முள்ளங்கி)' }, image: 'https://images.unsplash.com/photo-1594911775166-79af47444c54?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v11', category: 'Root Vegetables', names: { en: 'Turnip', ta: 'Turnip (டர்னிப்)' }, image: 'https://images.unsplash.com/photo-1590779033100-9f60705a2f3b?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v12', category: 'Root Vegetables', names: { en: 'Potato', ta: 'Urulaikizhangu (உருளைக்கிழங்கு)' }, image: 'https://images.unsplash.com/photo-1518977676601-b53f02bad67b?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v13', category: 'Root Vegetables', names: { en: 'Sweet Potato', ta: 'Sarkaraivalli Kizhangu (சர்க்கரைவள்ளி கிழங்கு)' }, image: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=400&h=400&auto=format&fit=crop' },
+
+    // 🧅 Bulb Vegetables
+    { id: 'v14', category: 'Bulb Vegetables', names: { en: 'Onion', ta: 'Vengayam (வெங்காயம்)' }, image: 'https://images.unsplash.com/photo-1508747703725-719777637510?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v15', category: 'Bulb Vegetables', names: { en: 'Small Onion / Shallots', ta: 'Chinna Vengayam (சின்ன வெங்காயம்)' }, image: 'https://images.unsplash.com/photo-1620574387735-3624d75b2dbc?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v16', category: 'Bulb Vegetables', names: { en: 'Garlic', ta: 'Poondu (பூண்டு)' }, image: 'https://images.unsplash.com/photo-1540148426945-6cf22a6b2383?q=80&w=400&h=400&auto=format&fit=crop' },
+
+    // 🍆 Common Vegetables
+    { id: 'v17', category: 'Common Vegetables', names: { en: 'Brinjal / Eggplant', ta: 'Kathirikai (கத்திரிக்காய்)' }, image: 'https://images.unsplash.com/photo-1615484477778-ca3b77940c25?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v18', category: 'Common Vegetables', names: { en: 'Tomato', ta: 'Thakkali (தக்காளி)' }, image: 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v19', category: 'Common Vegetables', names: { en: 'Green Chilli', ta: 'Pachai Milagai (பச்சை மிளகாய்)' }, image: 'https://images.unsplash.com/photo-1584270354949-c26b0d5b4a0c?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v20', category: 'Common Vegetables', names: { en: 'Capsicum', ta: 'Kudaimilagai (குடைமிளகாய்)' }, image: 'https://images.unsplash.com/photo-1563513307168-a4262edff7f4?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v21', category: 'Common Vegetables', names: { en: 'Ladies Finger', ta: 'Vendakkai (வெண்டைக்காய்)' }, image: 'https://images.unsplash.com/photo-1449300079323-02e209d9d02e?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v22', category: 'Common Vegetables', names: { en: 'Cabbage', ta: 'Muttaikose (முட்டைக்கோஸ்)' }, image: 'https://images.unsplash.com/photo-1591195853828-11db59a44f6b?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v23', category: 'Common Vegetables', names: { en: 'Cauliflower', ta: 'Cauliflower (காலிஃபிளவர்)' }, image: 'https://images.unsplash.com/photo-1568584711075-3d021a7c3ec3?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v24', category: 'Common Vegetables', names: { en: 'Beans', ta: 'Beans (பீன்ஸ்)' }, image: 'https://images.unsplash.com/photo-1567375639073-6091481b62f0?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v25', category: 'Common Vegetables', names: { en: 'Broad Beans', ta: 'Avarakkai (அவரைக்காய்)' }, image: 'https://images.unsplash.com/photo-1515471209610-dae1c92d8777?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v26', category: 'Common Vegetables', names: { en: 'Cluster Beans', ta: 'Kothavarangai (கொத்தவரங்காய்)' }, image: 'https://images.unsplash.com/photo-1567375639073-6091481b62f0?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v27', category: 'Common Vegetables', names: { en: 'Peas', ta: 'Pattani (பட்டாணி)' }, image: 'https://images.unsplash.com/photo-1592394933390-967b5f543477?q=80&w=400&h=400&auto=format&fit=crop' },
+
+    // 🎃 Gourds
+    { id: 'v28', category: 'Gourds', names: { en: 'Bottle Gourd', ta: 'Suraikkai (சுரைக்காய்)' }, image: 'https://images.unsplash.com/photo-1594911775166-79af47444c54?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v29', category: 'Gourds', names: { en: 'Ridge Gourd', ta: 'Peerkangai (பீர்க்கங்காய்)' }, image: 'https://images.unsplash.com/photo-1594911775166-79af47444c54?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v30', category: 'Gourds', names: { en: 'Snake Gourd', ta: 'Pudalangai (புடலங்காய்)' }, image: 'https://images.unsplash.com/photo-1594911775166-79af47444c54?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v31', category: 'Gourds', names: { en: 'Bitter Gourd', ta: 'Pavakkai (பாவக்காய்)' }, image: 'https://images.unsplash.com/photo-1563815340078-62f48937077a?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v32', category: 'Gourds', names: { en: 'Ash Gourd', ta: 'Poosanikai (பூசணிக்காய்)' }, image: 'https://images.unsplash.com/photo-1594911775166-79af47444c54?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v33', category: 'Gourds', names: { en: 'Pumpkin', ta: 'Parangikkai (பரங்கிக்காய்)' }, image: 'https://images.unsplash.com/photo-1506976785307-8732e854ad03?q=80&w=400&h=400&auto=format&fit=crop' },
+
+    // 🌱 Others
+    { id: 'v34', category: 'Others', names: { en: 'Drumstick', ta: 'Murungakkai (முருங்கைக்காய்)' }, image: 'https://images.unsplash.com/photo-1627440439434-746f2ff30740?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v35', category: 'Others', names: { en: 'Raw Banana', ta: 'Vazhakkai (வாழைக்காய்)' }, image: 'https://images.unsplash.com/photo-1587323868595-1f9643440bf5?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v36', category: 'Others', names: { en: 'Banana Stem', ta: 'Vazhaithandu (வாழைத்தண்டு)' }, image: 'https://images.unsplash.com/photo-1587323868595-1f9643440bf5?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v37', category: 'Others', names: { en: 'Banana Flower', ta: 'Vazhaipoo (வாழைப்பூ)' }, image: 'https://images.unsplash.com/photo-1587323868595-1f9643440bf5?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v38', category: 'Others', names: { en: 'Yam', ta: 'Senai Kizhangu (சேனைக்கிழங்கு)' }, image: 'https://images.unsplash.com/photo-1590779033100-9f60705a2f3b?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v39', category: 'Others', names: { en: 'Colocasia', ta: 'Seppankizhangu (சேப்பங்கிழங்கு)' }, image: 'https://images.unsplash.com/photo-1590779033100-9f60705a2f3b?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v40', category: 'Others', names: { en: 'Mushroom', ta: 'Kaalan (காளான்)' }, image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=400&h=400&auto=format&fit=crop' },
+    { id: 'v41', category: 'Others', names: { en: 'Corn', ta: 'Makka Cholam (மக்காச்சோளம்)' }, image: 'https://images.unsplash.com/photo-1551754655-cd27e38d2076?q=80&w=400&h=400&auto=format&fit=crop' },
+
+    // 🍎 Fruits
+    { id: 'f1', category: 'Fruits', names: { en: 'Apple', ta: 'Apple (ஆப்பிள்)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Apple.png' },
+    { id: 'f2', category: 'Fruits', names: { en: 'Banana', ta: 'Vazhai Pazham (வாழைப்பழம்)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/bananas.jpg' },
+    { id: 'f3', category: 'Fruits', names: { en: 'Mango', ta: 'Maampazham (மாம்பழம்)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Mango.png' },
+    { id: 'f4', category: 'Fruits', names: { en: 'Orange', ta: 'Aranju (ஆரஞ்சு)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Orange.jpg' },
+    { id: 'f5', category: 'Fruits', names: { en: 'Sweet Lime', ta: 'Sathukudi (சாத்துக்குடி)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Sweet Lime.jpg' },
+    { id: 'f6', category: 'Fruits', names: { en: 'Grapes', ta: 'Thiratchai (திராட்சை)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Grapes.jpg' },
+    { id: 'f7', category: 'Fruits', names: { en: 'Pineapple', ta: 'Annasi Pazham (அன்னாசி)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/PineApple.jpg' },
+    { id: 'f8', category: 'Fruits', names: { en: 'Papaya', ta: 'Pappali (பப்பாளி)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Papaya.jpg' },
+    { id: 'f9', category: 'Fruits', names: { en: 'Guava', ta: 'Koyya Pazham (கொய்யாப்பழம்)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Guava.jpg' },
+    { id: 'f10', category: 'Fruits', names: { en: 'Watermelon', ta: 'Tharpoosani (தர்பூசணி)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Watermelon.jpg' },
+    { id: 'f11', category: 'Fruits', names: { en: 'Muskmelon', ta: 'Kirni Pazham (கிர்ணி பழம்)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Muskmelon.jpg' },
+    { id: 'f12', category: 'Fruits', names: { en: 'Pomegranate', ta: 'Maadhulai (மாதுளை)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Pomegranate.jpg' },
+    { id: 'f13', category: 'Fruits', names: { en: 'Strawberry', ta: 'Strawberry (ஸ்ட்ராபெரி)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Strawberry.jpg' },
+    { id: 'f14', category: 'Fruits', names: { en: 'Blueberry', ta: 'Blueberry (ப்ளூபெரி)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Blueberry.jpg' },
+    { id: 'f15', category: 'Fruits', names: { en: 'Blackberry', ta: 'Blackberry (பிளாக்பெரி)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Black Berry.jpg' },
+    { id: 'f16', category: 'Fruits', names: { en: 'Coconut', ta: 'Thengai (தேங்காய்)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Coconut.jpg' },
+    { id: 'f17', category: 'Fruits', names: { en: 'Tender Coconut', ta: 'Elaneer (எலநீர்)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Tender Coconut.jpg' },
+    { id: 'f18', category: 'Fruits', names: { en: 'Sapota (Chikoo)', ta: 'Chikoo / Sapota (சப்போட்டா)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Chikoo.jpg' },
+    { id: 'f19', category: 'Fruits', names: { en: 'Custard Apple', ta: 'Seetha Pazham (சீதாப்பழம்)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Custard Apple.jpg' },
+    { id: 'f20', category: 'Fruits', names: { en: 'Jackfruit', ta: 'Pala Pazham (பலாப்பழம்)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Jackfruit.jpg' },
+    { id: 'f21', category: 'Fruits', names: { en: 'Fig', ta: 'Athi Pazham (அத்திப்பழம்)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Fig.jpg' },
+    { id: 'f22', category: 'Fruits', names: { en: 'Dates', ta: 'Perichampazham (பேரிச்சம்பழம்)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Dates.jpg' },
+    { id: 'f23', category: 'Fruits', names: { en: 'Lemon', ta: 'Elumichai (எலுமிச்சை)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Lemon.jpg' },
+    { id: 'f24', category: 'Fruits', names: { en: 'Kiwi', ta: 'Kiwi (கிவி)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Kiwi.jpg' },
+    { id: 'f25', category: 'Fruits', names: { en: 'Dragon Fruit', ta: 'Dragon Pazham (டிராகன் பழம்)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Dragon Fruit.jpg' },
+    { id: 'f26', category: 'Fruits', names: { en: 'Avocado', ta: 'Butter Fruit (பட்டர் பழம்)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Avocado.jpg' },
+    { id: 'f27', category: 'Fruits', names: { en: 'Pear', ta: 'Pear (பியர்)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Pear.jpg' },
+    { id: 'f28', category: 'Fruits', names: { en: 'Plum', ta: 'Plum (ப்ளம்)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Plums.jpg' },
+    { id: 'f29', category: 'Fruits', names: { en: 'Cherry', ta: 'Cherry (செர்ரி)' }, image: '/Fruits shop-Nexa/Fruits shop-Nexa/Cherry.jpg' },
+];
