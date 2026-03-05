@@ -2,6 +2,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 from typing import List
 
 class Settings(BaseSettings):
+    DEBUG: bool = False
     DATABASE_URL: str = "sqlite:///./veggieflow.db"
     SECRET_KEY: str = "dev_secret_key_change_me_in_production"
     ALGORITHM: str = "HS256"
