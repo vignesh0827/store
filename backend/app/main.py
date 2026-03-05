@@ -25,13 +25,24 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 app = FastAPI(title="VeggieFlow Pro API")
 
+# Configure CORS - Must be defined early
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"] if settings.DEBUG else settings.origins_list,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+    expose_headers=["*"],
+)
+
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to VeggieFlow Pro API"}
+
 # Authentication Endpoint
 @app.post("/token", response_model=schemas.Token)
 async def login_for_access_token(db: Session = Depends(get_db), form_data: OAuth2PasswordRequestForm = Depends()):
     user = crud.get_user_by_username(db, username=form_data.username)
-    print(f"DEBUG: Login Attempt for user: '{form_data.username}'")
-    if not user:
-        print(f"DEBUG: User '{form_data.username}' not found in DB")
     if not user or not auth.verify_password(form_data.password, user.hashed_password):
         raise HTTPException(
             status_code=401,
@@ -67,19 +78,6 @@ async def get_manager_user(current_user: models.User = Depends(get_current_user)
             detail="The user does not have enough privileges"
         )
     return current_user
-
-# Configure CORS
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=settings.origins_list,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-@app.get("/")
-def read_root():
-    return {"message": "Welcome to VeggieFlow Pro API"}
 
 @app.post("/signup", response_model=schemas.User)
 def signup(user: schemas.UserCreate, db: Session = Depends(get_db)):
